@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
         /* 初始化样式 */
-        *{
+        
+        * {
             margin: 0;
             padding: 0;
             /* 取消点击后的高亮样式 */
@@ -15,21 +17,25 @@
             /* 禁止用户选择 */
             user-select: none;
         }
+        
         li {
             list-style: none;
         }
+        
         a {
             /* 去掉下划线 */
             text-decoration: none;
             /* 默认颜色 */
             color: #222222;
         }
+        
         input {
             /* 去挑外轮廓线 */
             outline: none;
             /* 去掉边框 */
             border: none;
         }
+        
         body {
             max-width: 540px;
             min-width: 320px;
@@ -37,12 +43,12 @@
             background-color: #F6F6F6;
             margin: 0 auto;
             font-size: 12px;
-            font-family: "微软雅黑","宋体";
+            font-family: "微软雅黑", "宋体";
             /* border: 1px solid red; */
             margin-bottom: 40px;
         }
-
         /* 顶部导航栏 */
+        
         .top_nav {
             height: 44px;
             width: 100%;
@@ -60,12 +66,14 @@
             align-items: center;
             z-index: 1000;
         }
+        
         .top_nav .list {
             width: 22px;
             height: 20px;
-            background: url(./images/list.png) no-repeat 0px 0px ;
+            background: url(./images/list.png) no-repeat 0px 0px;
             background-size: 22px auto;
         }
+        
         .top_nav .search {
             flex: 1;
             height: 30px;
@@ -75,6 +83,7 @@
             margin-right: 10px;
             position: relative;
         }
+        
         .top_nav .search input {
             width: 100%;
             height: 30px;
@@ -83,6 +92,7 @@
             color: #666666;
             background-color: #fff;
         }
+        
         .top_nav .search .icon_jd {
             width: 20px;
             height: 18px;
@@ -92,6 +102,7 @@
             left: 18px;
             top: 7px;
         }
+        
         .top_nav .search .icon_search {
             width: 17px;
             height: 17px;
@@ -101,6 +112,7 @@
             left: 55px;
             top: 6px;
         }
+        
         .top_nav .search .icon_search::before {
             content: "";
             width: 1px;
@@ -110,11 +122,12 @@
             left: -10px;
             top: 2px;
         }
+        
         .top_nav .login a {
             color: #fff;
         }
-
         /* 头部背景 */
+        
         .bg {
             width: 100%;
             height: 414px;
@@ -122,8 +135,8 @@
             background-size: 100% 100%;
             position: relative;
         }
-
         /* 轮播图 */
+        
         .bg .banner {
             /* height: 287px; */
             width: calc(100% - 25px);
@@ -135,142 +148,172 @@
             position: absolute;
             top: 55px;
         }
+        
         .bg .banner ul {
             display: flex;
             height: 287px;
         }
+        
         .bg .banner ul li {
             width: 100%;
             height: 100%;
             flex: 1;
         }
+        
         .bg .banner ul li img {
             width: 100%;
             height: 100%;
         }
-
         /* 中间导航栏开始*/
+        
         .nav {
             margin-top: -60px;
             position: relative;
         }
+        
         .nav ul {
             display: flex;
             flex-wrap: wrap;
         }
+        
         .nav ul li {
             width: 20%;
             margin-bottom: 10px;
         }
+        
         .nav ul li a {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .nav ul li a .icon{
+        
+        .nav ul li a .icon {
             width: 57.6px;
-            height: 57.6px;  
+            height: 57.6px;
         }
+        
         .nav ul li:nth-child(1) a .icon {
             background: url(./images/icon01.png) no-repeat;
             background-size: 100% 100%;
         }
+        
         .nav ul li:nth-child(2) a .icon {
             background: url(./images/icon02.png) no-repeat;
             background-size: 100% 100%;
         }
+        
         .nav ul li:nth-child(3) a .icon {
             background: url(./images/icon03.png) no-repeat;
             background-size: 100% 100%;
         }
+        
         .nav ul li:nth-child(4) a .icon {
             background: url(./images/icon04.png) no-repeat;
             background-size: 100% 100%;
         }
+        
         .nav ul li:nth-child(5) a .icon {
             background: url(./images/icon05.png) no-repeat;
             background-size: 100% 100%;
         }
+        
         .nav ul li:nth-child(6) a .icon {
             background: url(./images/icon06.png) no-repeat;
             background-size: 100% 100%;
         }
+        
         .nav ul li:nth-child(7) a .icon {
             background: url(./images/icon07.png) no-repeat;
             background-size: 100% 100%;
         }
+        
         .nav ul li:nth-child(8) a .icon {
             background: url(./images/icon08.png) no-repeat;
             background-size: 100% 100%;
         }
+        
         .nav ul li:nth-child(9) a .icon {
             background: url(./images/icon09.png) no-repeat;
             background-size: 100% 100%;
         }
+        
         .nav ul li:nth-child(10) a .icon {
             background: url(./images/icon10.png) no-repeat;
             background-size: 100% 100%;
         }
-
         /* 广告栏 */
+        
         .guanggao {
             background: #B4F9E9;
         }
+        
         .guanggao ul li {
             display: flex;
             margin-bottom: 8px;
         }
+        
         .guanggao ul li:nth-child(1) a {
             height: 148px;
             width: 100%;
         }
-        .guanggao ul li:nth-child(1) a img{
+        
+        .guanggao ul li:nth-child(1) a img {
             width: 100%;
             height: 100%;
         }
+        
         .guanggao ul li:nth-child(2) {
             box-sizing: border-box;
             padding-left: 10px;
             padding-right: 10px;
         }
+        
         .guanggao ul li:nth-child(2) a {
             flex: 1;
             overflow: hidden;
         }
+        
         .guanggao ul li:nth-child(2) a:nth-child(1) {
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
         }
+        
         .guanggao ul li:nth-child(2) a:nth-child(2) {
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
         }
-        .guanggao ul li:nth-child(2) a img{
+        
+        .guanggao ul li:nth-child(2) a img {
             width: 100%;
             height: 100%;
         }
+        
         .guanggao ul li:nth-child(3) a {
             height: 100px;
             width: 100%;
         }
+        
         .guanggao ul li:nth-child(3) a img {
             width: 100%;
             height: 100%;
         }
+        
         .guanggao ul li:nth-child(4) {
             justify-content: center;
             margin-bottom: 0px;
         }
+        
         .guanggao ul li:nth-child(4) a {
             height: 140px;
             width: 32%;
         }
+        
         .guanggao ul li:nth-child(4) a img {
             width: 100%;
             height: 100%;
         }
-
         /* 底部固定栏 */
+        
         .footer_nav {
             width: 100%;
             max-width: 540px;
@@ -282,6 +325,7 @@
             bottom: 0;
             transform: translateX(-50%);
         }
+        
         .footer_nav ul {
             display: flex;
             height: 100%;
@@ -293,35 +337,42 @@
             justify-content: center;
             align-items: center
         }
-        .footer_nav ul li a{
+        
+        .footer_nav ul li a {
             width: 50px;
             height: 40px;
-            
         }
+        
         .footer_nav ul li:nth-child(1) a {
             background: url(./images/shouye.png) no-repeat 0px 0px;
             background-size: cover;
         }
+        
         .footer_nav ul li:nth-child(2) a {
             background: url(./images/fenlei.png) no-repeat 0px 0px;
             background-size: cover;
         }
+        
         .footer_nav ul li:nth-child(3) a {
             background: url(./images/jingxi.png) no-repeat 0px 0px;
             background-size: cover;
         }
+        
         .footer_nav ul li:nth-child(4) a {
             background: url(./images/car.png) no-repeat 0px 0px;
             background-size: cover;
         }
+        
         .footer_nav ul li:nth-child(5) a {
             background: url(./images/weidenglu.png) no-repeat 0px 0px;
             background-size: cover;
         }
     </style>
 </head>
+
 <body>
     <!-- 顶部导航栏开始 -->
+    <p>太难了</p>
     <div class="top_nav">
         <div class="list"></div>
         <div class="search">
@@ -332,10 +383,10 @@
         <div class="login"><a href="#">登录</a></div>
     </div>
     <!-- 顶部导航栏结束 -->
-    
+
     <!-- 头部背景开始 -->
     <div class="bg">
-         <!-- 轮播图开始 -->
+        <!-- 轮播图开始 -->
         <div class="banner">
             <ul>
                 <li><img src="./images/newPerson01.png"></li>
@@ -366,12 +417,16 @@
     <!-- 广告栏开始 -->
     <div class="guanggao">
         <ul>
-            <li><a href="#"><img src="./images/618img.png"></a></li>
+            <li>
+                <a href="#"><img src="./images/618img.png"></a>
+            </li>
             <li>
                 <a href="#"><img src="./images/newPerson01.png"></a>
                 <a href="#"><img src="./images/newPerson02.png"></a>
             </li>
-            <li><a href="#"><img src="./images/newPerson03.webp"></a></li>
+            <li>
+                <a href="#"><img src="./images/newPerson03.webp"></a>
+            </li>
             <li>
                 <a href="#"><img src="./images/card01.png"></a>
                 <a href="#"><img src="./images/card02.png"></a>
@@ -384,13 +439,24 @@
     <!-- 底部固定栏开始 -->
     <div class="footer_nav">
         <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li>
+                <a href="#"></a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
         </ul>
     </div>
     <!-- 底部固定栏结束 -->
 </body>
+
 </html>
